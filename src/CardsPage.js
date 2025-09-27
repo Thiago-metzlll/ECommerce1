@@ -1,6 +1,5 @@
-
-import React, { useState, useEffect } from "react"; // precisa importar useState e useEffect
-import Card from "./Cards.js";
+import React, { useState, useEffect } from "react";
+import Card from "./Card.js";
 import "./cards.css";
 
 function CardsPage() {
@@ -9,7 +8,7 @@ function CardsPage() {
   useEffect(() => {
     fetch("http://localhost:5000/api/cards")
       .then((res) => res.json())
-      .then((data) => setProdutos(data))
+      .then((data) => setProdutos(data.bancodedados)) // acessa a chave 'bancodedados'
       .catch((err) => console.error("Erro ao buscar produtos:", err));
   }, []);
 
