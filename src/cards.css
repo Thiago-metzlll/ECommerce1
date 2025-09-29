@@ -48,3 +48,20 @@
 .card-btn:hover {
   background-color: #125ca1;
 }
+
+/* botão de adicionar produto */
+.add-card-btn {
+  background-color: #4CAF50;      /* verde agradável */
+  color: white;                    /* texto branco */
+  border: none;                    /* sem borda */
+  padding: 10px 20px;              /* espaço interno */
+  border-radius: 8px;              /* cantos arredondados */
+  cursor: pointer;                 /* mãozinha ao passar o mouse */
+  font-weight: bold;               /* destaque no texto */
+  transition: 0.3s;                /* transição suave para hover */
+}
+
+.add-card-btn:hover {
+  background-color: #45a049;       /* muda o tom de verde ao passar o mouse */
+  transform: scale(1.05);          /* leve aumento */
+}

@@ -1,10 +1,13 @@
 import React from "react";
 import CardsPage from "./CardsPage";
+import "./App.css"; // opcional, para estilizar depois
+
+
 
 function App() {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Loja Simples</h1>
+    <div className="body-background">
+      <h1 style={{ textAlign: "center" }}>Cidades Latinas</h1>
       <CardsPage />
     </div>
   );

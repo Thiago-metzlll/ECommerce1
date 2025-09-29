@@ -6,8 +6,8 @@ function Card({ title, price, image }) {
     <div className="card">
       <img src={image} alt={title} className="card-img" />
       <h3 className="card-title">{title}</h3>
-      <p className="card-price">R$ {price}</p>
-      <button className="card-btn">Comprar</button>
+      <p className="card-price"> População: {price}</p>
+      <button className="card-btn">Ver</button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -6,6 +6,8 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +37,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+
+/* imagem de fundo com blur */
+
+.body-background {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('https://imgmd.net/image/upload/v1/guia/4470853.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* overlay escuro */
+.body-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* preto com 50% de transparência */
+  z-index: 0;
+}
+
+/* garante que o conteúdo fique acima do overlay */
+.body-background > * {
+  position: relative;
+  z-index: 1;
 }
