@@ -46,6 +46,7 @@ function CardsPage() {
       });
 
       const produtoCriado = await resposta.json();
+      console.log(produtoCriado);
       setProdutos((prevProdutos) => [...prevProdutos, produtoCriado]);
     } catch (erro) {
       console.error("Erro ao adicionar cidade:", erro);
