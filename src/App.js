@@ -7,7 +7,7 @@ import "./App.css"; // opcional, para estilizar depois
 function App() {
   return (
     <div className="body-background">
-      <h1 style={{ textAlign: "center" }}>Cidades Latinas</h1>
+      <h1 className="titulo-cidades">Arquitetura Histórica das cidades Latinas</h1>
       <CardsPage />
     </div>
   );
